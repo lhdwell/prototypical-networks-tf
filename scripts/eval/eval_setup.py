@@ -3,7 +3,9 @@ Logic for evaluation procedure of saved model.
 """
 
 import tensorflow as tf
-tf.config.gpu.set_per_process_memory_growth(True)
+# gpus = tf.config.experimental.list_physical_devices('GPU')
+# for gpu in gpus:
+#   tf.config.experimental.set_memory_growth(gpu, True)
 
 from prototf.models import Prototypical
 from prototf.data import load
